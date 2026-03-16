@@ -8,8 +8,8 @@ if __name__ == "__main__":
     num = int(sys.argv[1])
     dictionary = []
     for _ in range(num):
-        name = input('Add a new candidate:\nname: ')
-        age = int(input('age: '))
+        name = input('Add a new candidate:\nname: ').strip()
+        age = int(input('age: ').strip())
         dictionary.append({"name": name, "age": age})
 
     for item in dictionary:
